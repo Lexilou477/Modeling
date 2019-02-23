@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Scooter_scene.ma
-//Last modified: Sat, Feb 23, 2019 04:24:32 PM
+//Last modified: Sat, Feb 23, 2019 04:25:42 PM
 //Codeset: 1252
 requires maya "2018";
 requires "stereoCamera" "10.0";
@@ -15,13 +15,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "7872C42B-4CE9-BC89-9EB5-639A1AF394E0";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 19.497136890217455 9.947694401622698 6.9953445939358927 ;
-	setAttr ".r" -type "double3" -20.738352862940918 5486.9999999869233 0 ;
+	setAttr ".t" -type "double3" 3.5465004095758039 4.5637981329754727 35.149078493354949 ;
+	setAttr ".r" -type "double3" -1.5383528621350944 5400.5999999844362 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "C5CBD779-4654-A9AB-350B-D4BD13661C0E";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 17.404378272183958;
+	setAttr ".coi" 29.017639625928645;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -9692,7 +9692,7 @@ createNode polyTweak -n "polyTweak129";
 	setAttr ".tk[160]" -type "float3" -0.29718995 -2.9802322e-08 0.09656287 ;
 	setAttr ".tk[161]" -type "float3" -0.312484 -2.9802322e-08 0 ;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "06432E1B-4D5D-C710-A7C2-C9973C695504";
+	rename -uid "ECABAAF7-42EA-0F54-3A23-A596ED4BB2F4";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -73.809520876596963 -241.66665706369653 ;
 	setAttr ".tgi[0].vh" -type "double2" 72.619044733426037 251.19046620906389 ;
