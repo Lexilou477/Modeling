@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Scooter_scene.ma
-//Last modified: Mon, Feb 25, 2019 08:26:03 PM
+//Last modified: Mon, Feb 25, 2019 08:20:44 PM
 //Codeset: 1252
 requires maya "2018";
 requires "stereoCamera" "10.0";
@@ -7717,7 +7717,7 @@ createNode lambert -n "Tire_Shader";
 createNode shadingEngine -n "lambert2SG";
 	rename -uid "D25A8EB7-461C-04E6-B1C0-2AA723990C91";
 	setAttr ".ihi" 0;
-	setAttr -s 5 ".dsm";
+	setAttr -s 3 ".dsm";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo2";
 	rename -uid "8E7E386C-4A82-8F57-E625-0CB5B7295209";
@@ -9212,7 +9212,7 @@ createNode blinn -n "Leather_Shader";
 createNode shadingEngine -n "blinn2SG";
 	rename -uid "01E0C2ED-4974-6D10-C04F-FCB292653493";
 	setAttr ".ihi" 0;
-	setAttr -s 6 ".dsm";
+	setAttr -s 8 ".dsm";
 	setAttr ".ro" yes;
 	setAttr -s 6 ".gn";
 createNode materialInfo -n "materialInfo3";
@@ -12602,7 +12602,7 @@ createNode polyTweak -n "polyTweak156";
 	setAttr ".tk[790]" -type "float3" 0.025277067 0 0.078604706 ;
 	setAttr ".tk[791]" -type "float3" 0.02527694 0 0.076978981 ;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "8D322759-4379-79A2-DE91-F8B13DBDBEC3";
+	rename -uid "A3D3A89D-4C49-6E85-1527-1DA45D2D38E6";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -73.809520876596963 -241.66665706369653 ;
 	setAttr ".tgi[0].vh" -type "double2" 72.619044733426037 251.19046620906389 ;
@@ -13680,8 +13680,6 @@ connectAttr "polySurface20Shape.wm" "polyBridgeEdge176.mp";
 connectAttr "Tire_Shader.oc" "lambert2SG.ss";
 connectAttr "polySurfaceShape14.iog" "lambert2SG.dsm" -na;
 connectAttr "polySurfaceShape5.iog" "lambert2SG.dsm" -na;
-connectAttr "pCubeShape1.iog" "lambert2SG.dsm" -na;
-connectAttr "pCubeShape2.iog" "lambert2SG.dsm" -na;
 connectAttr "lambert2SG.msg" "materialInfo2.sg";
 connectAttr "Tire_Shader.msg" "materialInfo2.m";
 connectAttr "polyCylinder7.out" "polyCut20.ip";
@@ -13806,8 +13804,10 @@ connectAttr "polyTweak125.out" "polySoftEdge3.ip";
 connectAttr "pCylinderShape5.wm" "polySoftEdge3.mp";
 connectAttr "polyBridgeEdge195.out" "polyTweak125.ip";
 connectAttr "Leather_Shader.oc" "blinn2SG.ss";
+connectAttr "pCubeShape1.iog" "blinn2SG.dsm" -na;
 connectAttr "pCylinderShape4.iog.og[1]" "blinn2SG.dsm" -na;
 connectAttr "pCylinderShape5.iog.og[3]" "blinn2SG.dsm" -na;
+connectAttr "pCubeShape2.iog" "blinn2SG.dsm" -na;
 connectAttr "pCylinderShape11.iog.og[0]" "blinn2SG.dsm" -na;
 connectAttr "pCylinderShape11.ciog.cog[0]" "blinn2SG.dsm" -na;
 connectAttr "polySurfaceShape28.iog.og[0]" "blinn2SG.dsm" -na;
