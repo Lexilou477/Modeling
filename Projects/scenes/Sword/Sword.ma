@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Sword.ma
-//Last modified: Tue, Mar 12, 2019 07:14:10 PM
+//Last modified: Tue, Mar 12, 2019 02:16:57 PM
 //Codeset: 1252
 requires maya "2018";
 currentUnit -l centimeter -a degree -t film;
